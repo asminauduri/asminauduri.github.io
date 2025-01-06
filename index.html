@@ -4,30 +4,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 
+    <link rel="stylesheet" href="styles.css"> <!-- LINK TO CSS FILE -->
+    <script src="includeNav.js"></script> <!--includes the js file-->
     <style>
         /* where i make it look purdy */
+        
+        
     </style>
 
     <script>
         //I CAN DO JAVASCRIPT STUFF HERE
 
-        //function for -> Portfolio when click button
-        function goP(){
-
-        }
-        //function for -> contact page
-        function goCP(){
-            
+        //Function for -> Portfolio when click button
+        function goP() {
+            window.location.href = "portfolio.html";
         }
 
-        //function for open resume
-        function openResume(){
+        //Function for -> Contact page
+        function goCP() {
+            window.location.href = "contactMe.html";
+        }
 
+        //Function for open resume
+        function openResume() {
+            //window.open("path/to/your/resume.pdf", "_blank");
+        }
+
+        //Function for services and pricing details
+        function goSnP() {
+            window.location.href = "servicesAndPrices.html";
         }
     </script>
 </head>
 
-<body>
+<body onload="loadNav()"> <!-- call loadNav when the body loads! -->
+<div id="nav-placeholder"> </div>
+
     <header>
         <h1> Nauduri Sites </h1>
         <p> Web Developer & Creative Problem-Solver | Building Functional and Beautiful Websites </p>
@@ -47,7 +59,7 @@
                 <li>Back-End or Coding Languages: Python, Java</li>
                 <li>Platforms: WordPress, GitHub, Google Sites</li>
             </ul>
-            <p>To learn more, <button onclick="downloadResume()">View My Resume</button></p>
+            <p>To learn more, <button onclick="openResume()">View My Resume</button></p>
         </div>
         <div class="abtme"> 
             <h2>About Me</h2>

@@ -1,0 +1,17 @@
+nav ul {
+    list-style-type: none; /*gets rid of bullet points*/
+    display: flex; /* makes bps go in a line instead of down*/
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block; /* makes list items display inline */
+}
+
+
+nav ul li a { /*abt each link in navigation header*/
+display: block; /*makes each act like a block so i can put padding & etc on them*/
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
